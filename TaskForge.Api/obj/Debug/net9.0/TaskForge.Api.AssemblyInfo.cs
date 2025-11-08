@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskForge.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71c1b66ff41a1317b3a43734c616fe3ea5f35375")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ea75ff661c074cd9045f97fcf0bff49d9ef4e7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskForge.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskForge.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

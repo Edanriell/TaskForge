@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y7oAPHy8dBk=",
+  "dgSpecHash": "eT21auKdPM8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
+  "projectFilePath": "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\owner\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\owner\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",

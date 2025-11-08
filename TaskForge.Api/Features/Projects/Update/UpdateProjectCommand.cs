@@ -1,5 +1,6 @@
-﻿namespace TaskForge.Api.Features.Projects.Update;
+﻿using MediatR;
+using TaskForge.Api.Domain.Abstractions;
 
-public class UpdateProjectCommand
-{
-}
+namespace TaskForge.Api.Features.Projects.Update;
+
+public sealed record UpdateProjectCommand(Guid Id, string Name, string Description) : IRequest<Result<UpdateProjectResponse>>;

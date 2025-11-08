@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj": {}
+    "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj": {
+    "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
+        "projectUniqueName": "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
         "projectName": "TaskForge.Api",
-        "projectPath": "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
+        "projectPath": "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\TaskForge.Api.csproj",
         "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\owner\\Desktop\\Test\\TaskForge\\TaskForge.Api\\obj\\",
+        "outputPath": "C:\\Users\\owner\\Desktop\\TaskForge\\TaskForge\\TaskForge.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
