@@ -1,6 +1,3 @@
 ﻿namespace TaskForge.Api.Features.Tasks.Update;
 
-public class UpdateTaskResponse
-{
-    
-}
+public sealed record UpdateTaskResponse(Guid ProjectId, Guid TaskId);

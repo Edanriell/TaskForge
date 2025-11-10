@@ -26,3 +26,5 @@ public sealed class DeleteProjectEndpoint(IMediator mediator) : ControllerBase
         return NoContent();
     }
 }
+
+// DELETE /api/projects/{id}/tasks/{taskId}

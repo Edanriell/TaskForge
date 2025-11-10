@@ -23,7 +23,7 @@ public sealed class Task : Entity
     public TaskTitle Title { get; private set; }
     public TaskStatus Status { get; private set; }
 
-    public static Task Create(
+    public static Result<Task> Create(
         Guid projectId,
         TaskTitle title)
     {
@@ -33,7 +33,7 @@ public sealed class Task : Entity
             title,
             TaskStatus.InProgress);
 
-        return task;
+        return Result.Success(task);
     }
 
     public Result Update(TaskTitle? taskTitle, TaskStatus? taskStatus)

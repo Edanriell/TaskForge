@@ -29,3 +29,5 @@ public sealed class CreateProjectEndpoint(IMediator mediator) : ControllerBase
             result.Value);
     }
 }
+
+// POST /api/projects/{id}/tasks

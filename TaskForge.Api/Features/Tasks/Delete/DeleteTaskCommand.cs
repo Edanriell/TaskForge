@@ -1,5 +1,6 @@
-﻿namespace TaskForge.Api.Features.Tasks.Delete;
+﻿using MediatR;
+using TaskForge.Api.Domain.Abstractions;
 
-public class DeleteTaskCommand
-{
-}
+namespace TaskForge.Api.Features.Tasks.Delete;
+
+public sealed record DeleteTaskCommand(Guid ProjectId, Guid Id) : IRequest<Result>;
