@@ -1,11 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+	import { Sidebar } from "@organisms";
+</script>
 
 <template>
-	<div class="bg-[red] w-full">
-		<header>This is header</header>
-		<main>
+	<div class="bg-base-100 w-full grid grid-cols-[auto_1fr]">
+		<Sidebar />
+		<main class="col-start-[2]">
 			<slot />
 		</main>
-		<footer>This is footer</footer>
 	</div>
 </template>

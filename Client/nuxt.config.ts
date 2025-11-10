@@ -15,6 +15,7 @@ export default defineNuxtConfig({
 		"@pages": fileURLToPath(new URL("./app/pages", import.meta.url))
 	},
 	modules: [
+		"@nuxt/icon",
 		"@nuxt/eslint",
 		"@nuxt/fonts",
 		"@nuxt/image",
