@@ -1,25 +1,25 @@
 {
-  "tabWidth": 4,
-  "useTabs": true,
-  "semi": true,
-  "singleQuote": false,
-  "jsxSingleQuote": false,
-  "quoteProps": "as-needed",
-  "jsxBracketSameLine": false,
-  "arrowParens": "always",
-  "trailingComma": "none",
-  "vueIndentScriptAndStyle": true,
-  "endOfLine": "auto",
-  "printWidth": 100,
-  "bracketSpacing": true,
-  "plugins": [
-	"prettier-plugin-tailwindcss",
-	"prettier-plugin-vue",
-	"prettier-plugin-organize-attributes",
-	"prettier-plugin-style-order",
-	"prettier-plugin-packagejson",
-	"prettier-plugin-organize-imports",
-	"prettier-plugin-sh",
-	"prettier-plugin-css-order"
-  ]
+	"tabWidth": 4,
+	"useTabs": true,
+	"semi": true,
+	"singleQuote": false,
+	"jsxSingleQuote": false,
+	"quoteProps": "as-needed",
+	"jsxBracketSameLine": false,
+	"arrowParens": "always",
+	"trailingComma": "none",
+	"vueIndentScriptAndStyle": true,
+	"endOfLine": "auto",
+	"printWidth": 100,
+	"bracketSpacing": true,
+	"plugins": [
+		"prettier-plugin-tailwindcss",
+		"prettier-plugin-vue",
+		"prettier-plugin-organize-attributes",
+		"prettier-plugin-style-order",
+		"prettier-plugin-packagejson",
+		"prettier-plugin-organize-imports",
+		"prettier-plugin-sh",
+		"prettier-plugin-css-order"
+	]
 }
