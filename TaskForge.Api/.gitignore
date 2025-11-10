@@ -1,0 +1,58 @@
+# Rider IDE files
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.ntvs*
+*.njsproj
+*.vcxproj.user
+
+# Build results
+bin/
+obj/
+out/
+
+# NuGet packages
+*.nupkg
+packages/
+.nuget/
+
+# ASP.NET / .NET Core temporary files
+*.log
+*.vs/
+appsettings.*.json
+wwwroot/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# Rider specific
+.idea/
+*.sln.iml
+*.dotSettings
+.idea_modules/
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# Rider caches
+.idea/.idea.*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/jsLibraryMappings.xml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Dotnet publish output
+publish/
