@@ -20,11 +20,28 @@
 		<input id="app-drawer" class="drawer-toggle" type="checkbox" >
 
 		<!-- Page Content -->
-		<div class="drawer-content flex flex-col items-center justify-center">
-			<label class="btn btn-primary drawer-button lg:hidden mt-4" for="app-drawer">
-				<Icon name="material-symbols:menu" class="w-12 h-12" />
-				Menu
-			</label>
+		<div class="drawer-content flex flex-col">
+			<!-- Mobile Header -->
+			<div class="lg:hidden sticky top-0 z-40 w-full bg-base-100 border-b border-base-300">
+				<div class="flex h-16 items-center px-4">
+					<label 
+						class="btn btn-ghost btn-square" 
+						for="app-drawer"
+						aria-label="Open menu"
+					>
+						<Icon name="mdi:menu" class="h-6 w-6" />
+					</label>
+					<h1 class="ml-4 text-xl font-bold flex items-center gap-2 text-primary">
+						<Icon name="mdi:hammer-wrench" class="h-6 w-6" />
+						TaskForge
+					</h1>
+				</div>
+			</div>
+			
+			<!-- Main Content -->
+			<div class="flex-1">
+				<slot />
+			</div>
 		</div>
 
 		<!-- Sidebar -->
