@@ -37,6 +37,7 @@
 				<button class="btn btn-accent btn-sm sm:btn-md">Edit</button>
 				<button class="btn btn-error btn-sm sm:btn-md">Delete</button>
 			</div>
+			<div>SadTask</div>
 		</div>
 
 		<!-- Task Info Card -->

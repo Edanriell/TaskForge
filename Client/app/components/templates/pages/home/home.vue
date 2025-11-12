@@ -11,7 +11,6 @@
 		<div class="flex items-center justify-between mb-8">
 			<h2 class="text-3xl font-bold">Projects <strong>(3)</strong></h2>
 		</div>
-
 		<div class="space-y-4">
 			<div
 				v-for="project in projects"

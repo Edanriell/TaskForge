@@ -35,6 +35,8 @@
 				<button class="btn btn-accent btn-sm sm:btn-md">Edit</button>
 				<button class="btn btn-error btn-sm sm:btn-md">Delete</button>
 			</div>
+			<div>Fanta</div>
+			<div>Sad</div>
 		</div>
 
 		<!-- Status -->

@@ -22,7 +22,8 @@
 		<!-- Page Content -->
 		<div class="drawer-content flex flex-col items-center justify-center">
 			<label class="btn btn-primary drawer-button lg:hidden mt-4" for="app-drawer">
-				☰ Menu
+				<Icon name="material-symbols:menu" class="w-12 h-12" />
+				Menu
 			</label>
 		</div>
 
