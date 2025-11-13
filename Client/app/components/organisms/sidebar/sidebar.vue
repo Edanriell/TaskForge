@@ -34,18 +34,17 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Sidebar -->
 		<div class="drawer-side">
 			<label class="drawer-overlay" for="app-drawer" />
 			<div
 				class="min-h-full w-80 bg-base-200 p-5 flex flex-col justify-between border-r border-base-300"
 			>
 				<Logotype classes="hidden absolute lg:flex" />
-				<!-- Top Section -->
 				<div class="mt-14">
+					<!-- Navigation -->
 					<ul class="menu">
 						<li class="mb-2">
+							<!-- Link -->
 							<NuxtLink
 								class="font-semibold text-base hover:bg-base-300 rounded-lg px-3 py-2"
 								to="/"
@@ -58,7 +57,7 @@
 							Projects
 						</li>
 
-						<!-- Project Accordion -->
+						<!-- Accordion -->
 						<li
 							v-for="project in projects"
 							:key="project.id"
@@ -84,7 +83,7 @@
 										</a>
 									</li>
 
-									<!-- New Task Button -->
+									<!-- Button -->
 									<li class="mt-3">
 										<button
 											class="btn btn-xs btn-outline btn-primary w-full"
