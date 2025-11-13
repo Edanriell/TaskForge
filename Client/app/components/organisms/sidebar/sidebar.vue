@@ -1,6 +1,8 @@
 "use client"
 
 <script lang="ts" setup>
+	import { Logotype } from "@atoms";
+
 	const projects = [
 		{
 			id: 1,
@@ -18,10 +20,7 @@
 <template>
 	<aside class="drawer lg:drawer-open">
 		<input id="app-drawer" class="drawer-toggle" type="checkbox" >
-
-		<!-- Page Content -->
 		<div class="drawer-content flex flex-col">
-			<!-- Mobile Header -->
 			<div class="lg:hidden sticky top-0 z-40 w-full">
 				<div class="flex h-16 items-center px-4">
 					<label 
@@ -31,10 +30,7 @@
 					>
 						<Icon name="mdi:menu" class="h-6 w-6" />
 					</label>
-					<h1 class="ml-4 flex items-center gap-2 text-primary text-2xl font-extrabold tracking-tight">
-						<Icon name="mdi:hammer-wrench" class="h-6 w-6" />
-						TaskForge
-					</h1>
+					<Logotype classes="flex" />
 				</div>
 			</div>
 		</div>
@@ -45,10 +41,7 @@
 			<div
 				class="min-h-full w-80 bg-base-200 p-5 flex flex-col justify-between border-r border-base-300"
 			>
-				<h1 class="hidden absolute ml-4 lg:flex items-center gap-2 text-primary text-2xl font-extrabold tracking-tight">
-					<Icon name="mdi:hammer-wrench" class="h-6 w-6" />
-					TaskForge
-				</h1>
+				<Logotype classes="hidden absolute lg:flex" />
 				<!-- Top Section -->
 				<div class="mt-14">
 					<ul class="menu">
