@@ -21,7 +21,7 @@
 </script>
 
 <template>
-	<section class="px-6 py-12">
+	<section class="px-6 py-18">
 		<!-- Header -->
 		<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8 gap-4">
 			<div>
@@ -37,7 +37,6 @@
 				<button class="btn btn-accent btn-sm sm:btn-md">Edit</button>
 				<button class="btn btn-error btn-sm sm:btn-md">Delete</button>
 			</div>
-			<div>SadTask</div>
 		</div>
 
 		<!-- Task Info Card -->

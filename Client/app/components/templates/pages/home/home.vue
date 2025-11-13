@@ -7,7 +7,7 @@
 </script>
 
 <template>
-	<section class="px-6 py-12">
+	<section class="px-6 py-18">
 		<div class="flex items-center justify-between mb-8">
 			<h2 class="text-3xl font-bold">Projects <strong>(3)</strong></h2>
 		</div>

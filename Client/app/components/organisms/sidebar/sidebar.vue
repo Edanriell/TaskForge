@@ -22,7 +22,7 @@
 		<!-- Page Content -->
 		<div class="drawer-content flex flex-col">
 			<!-- Mobile Header -->
-			<div class="lg:hidden sticky top-0 z-40 w-full bg-base-100 border-b border-base-300">
+			<div class="lg:hidden sticky top-0 z-40 w-full">
 				<div class="flex h-16 items-center px-4">
 					<label 
 						class="btn btn-ghost btn-square" 
@@ -31,30 +31,26 @@
 					>
 						<Icon name="mdi:menu" class="h-6 w-6" />
 					</label>
-					<h1 class="ml-4 text-xl font-bold flex items-center gap-2 text-primary">
+					<h1 class="ml-4 flex items-center gap-2 text-primary text-2xl font-extrabold tracking-tight">
 						<Icon name="mdi:hammer-wrench" class="h-6 w-6" />
 						TaskForge
 					</h1>
 				</div>
-			</div>
-			
-			<!-- Main Content -->
-			<div class="flex-1">
-				<slot />
 			</div>
 		</div>
 
 		<!-- Sidebar -->
 		<div class="drawer-side">
 			<label class="drawer-overlay" for="app-drawer" />
-
 			<div
 				class="min-h-full w-80 bg-base-200 p-5 flex flex-col justify-between border-r border-base-300"
 			>
+				<h1 class="hidden absolute ml-4 lg:flex items-center gap-2 text-primary text-2xl font-extrabold tracking-tight">
+					<Icon name="mdi:hammer-wrench" class="h-6 w-6" />
+					TaskForge
+				</h1>
 				<!-- Top Section -->
-				<div>
-					<h2 class="text-2xl font-extrabold mb-8 tracking-tight px-2">TaskForge</h2>
-
+				<div class="mt-14">
 					<ul class="menu">
 						<li class="mb-2">
 							<NuxtLink
