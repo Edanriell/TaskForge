@@ -19,15 +19,11 @@
 
 <template>
 	<aside class="drawer lg:drawer-open">
-		<input id="app-drawer" class="drawer-toggle" type="checkbox" >
+		<input id="app-drawer" class="drawer-toggle" type="checkbox" />
 		<div class="drawer-content flex flex-col">
 			<div class="lg:hidden sticky top-0 z-40 w-full">
 				<div class="flex h-16 items-center px-4">
-					<label 
-						class="btn btn-ghost btn-square" 
-						for="app-drawer"
-						aria-label="Open menu"
-					>
+					<label class="btn btn-ghost btn-square" for="app-drawer" aria-label="Open menu">
 						<Icon name="mdi:menu" class="h-6 w-6" />
 					</label>
 					<Logotype classes="flex" />
@@ -71,14 +67,14 @@
 								</summary>
 
 								<ul
-									class="relative mt-2 pl-5 space-y-1 before:content-[''] before:absolute before:left-2 before:top-2 before:h-[90%] before:w-[2px] before:bg-base-300 hover:before:bg-[#4129d3] before:opacity-[1] transition-all duration-200"
+									class="relative mt-2 pl-5 space-y-1 before:content-[''] before:absolute before:left-2 before:top-2 before:h-[90%] before:w-[1.5px] before:bg-base-300 hover:before:bg-[#4129d3] before:opacity-[1] transition-all duration-200"
 								>
 									<li
 										v-for="(task, index) in project.tasks"
 										:key="index"
 										class="text-sm"
 									>
-										<a class="block px-2 py-1 rounded-md hover:bg-base-300">
+										<a class="block px-4 py-1 rounded-md hover:bg-base-300">
 											{{ task }}
 										</a>
 									</li>
@@ -123,7 +119,7 @@
 					class="input input-bordered w-full mb-3"
 					placeholder="Task name"
 					type="text"
-				>
+				/>
 				<button class="btn btn-primary w-full">Save Task</button>
 			</div>
 		</dialog>
@@ -141,7 +137,7 @@
 					class="input input-bordered w-full mb-3"
 					placeholder="Project name"
 					type="text"
-				>
+				/>
 				<button class="btn btn-primary w-full">Save Project</button>
 			</div>
 		</dialog>

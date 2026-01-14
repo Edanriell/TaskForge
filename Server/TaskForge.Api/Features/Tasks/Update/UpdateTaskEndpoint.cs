@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace TaskForge.Api.Features.Tasks.Update;
 
 [ApiController]
-[Microsoft.AspNetCore.Components.Route("api/projects/{projectId:guid}/tasks/{taskId:guid}")]
+[Route("api/projects/{projectId:guid}/tasks/{taskId:guid}")]
 public sealed class UpdateTaskEndpoint(IMediator mediator) : ControllerBase
 {
     [HttpPatch]

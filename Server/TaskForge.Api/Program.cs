@@ -20,8 +20,10 @@ app.UseSwaggerUI();
 app.MapScalarApiReference(options => { options.WithOpenApiRoutePattern("/swagger/1.0/swagger.json"); });
 
 if (app.Environment.IsDevelopment())
+{
     // app.MapOpenApi();
     app.ApplyMigrations();
+} 
 // await app.SeedInitialDataAsync();
 // app.UseCustomExceptionHandler();
 // app.UseExceptionHandler();
@@ -40,4 +42,5 @@ app.Run();
 // POST /api/projects/{id}/tasks
 // PATCH /api/projects/{id}/tasks/{taskId}
 // DELETE /api/projects/{id}/tasks/{taskId}
-// Comment
+
+// dotnet ef migrations add InitialCreate --project TaskForge.Api --output-dir Infrastructure/Migrations

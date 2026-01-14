@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TaskForge.Api.Domain.Projects;
-using Task = TaskForge.Api.Domain.Tasks.Task;
 
 namespace TaskForge.Api.Infrastructure.Configurations;
 
@@ -32,7 +31,7 @@ public sealed class ProjectConfiguration : IEntityTypeConfiguration<Project>
         builder.Property(project => project.CreatedAt)
             .IsRequired();
 
-        builder.HasMany<Task>("_tasks")
+        builder.HasMany(project => project.Tasks)
             .WithOne()
             .HasForeignKey(task => task.ProjectId)
             .OnDelete(DeleteBehavior.Cascade);

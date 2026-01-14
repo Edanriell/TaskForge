@@ -1,4 +1,5 @@
-﻿services:
+﻿
+services:
     server.api:
         image: ${DOCKER_REGISTRY-}taskforge.api
         container_name: TaskForge.Api
@@ -6,7 +7,8 @@
             context: .
             dockerfile: TaskForge.Api/Dockerfile
         depends_on:
-            - taskforge-db
+            taskforge-db:
+                condition: service_healthy
         environment:
             - ASPNETCORE_ENVIRONMENT=Development
             - ASPNETCORE_HTTP_PORTS=5000
@@ -16,11 +18,10 @@
         volumes:
             - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
             - ${USERPROFILE}\.aspnet\https:/https/
-        #            - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
         ports:
             - 5000:5000
             - 5001:5001
-    
+
     taskforge-db:
         image: postgres:latest
         container_name: TaskForge.Db
@@ -31,4 +32,10 @@
         volumes:
             - ./.containers/database:/var/lib/postgresql/data
         ports:
-            - 5432:5432 
+            - 5432:5432
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U postgres -d taskforge"]
+            interval: 5s
+            timeout: 5s
+            retries: 10
+            start_period: 15s
