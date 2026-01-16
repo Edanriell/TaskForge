@@ -1,7 +1,7 @@
 "use client"
 
 <script lang="ts" setup>
-	import { Logotype } from "@atoms";
+	import { Logotype, Modal } from "@atoms";
 
 	const projects = [
 		{
@@ -106,40 +106,18 @@
 			</div>
 		</div>
 
-		<!-- Create Task Modal -->
-		<dialog id="createTaskModal" class="modal">
-			<div class="modal-box">
-				<form method="dialog">
-					<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-						✕
-					</button>
-				</form>
-				<h3 class="text-lg font-bold mb-4">Create Task</h3>
-				<input
-					class="input input-bordered w-full mb-3"
-					placeholder="Task name"
-					type="text"
-				/>
-				<button class="btn btn-primary w-full">Save Task</button>
-			</div>
-		</dialog>
+		<Modal id="createTaskModal" title="Create Task">
+			<input class="input input-bordered w-full mb-3" placeholder="Task name" type="text" />
+			<button class="btn btn-primary w-full">Save Task</button>
+		</Modal>
 
-		<!-- Create Project Modal -->
-		<dialog id="createProjectModal" class="modal">
-			<div class="modal-box">
-				<form method="dialog">
-					<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-						✕
-					</button>
-				</form>
-				<h3 class="text-lg font-bold mb-4">Create Project</h3>
-				<input
-					class="input input-bordered w-full mb-3"
-					placeholder="Project name"
-					type="text"
-				/>
-				<button class="btn btn-primary w-full">Save Project</button>
-			</div>
-		</dialog>
+		<Modal id="createProjectModal" title="Create Project">
+			<input
+				class="input input-bordered w-full mb-3"
+				placeholder="Project name"
+				type="text"
+			/>
+			<button class="btn btn-primary w-full">Save Project</button>
+		</Modal>
 	</aside>
 </template>
