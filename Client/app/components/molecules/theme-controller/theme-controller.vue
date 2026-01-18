@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-	<label class="absolute top-[12px] right-[16px] swap swap-rotate z-41">
+	<label class="absolute top-3 right-4 swap swap-rotate z-41">
 		<input type="checkbox" class="theme-controller" value="dark" />
 		<svg
 			class="swap-off h-10 w-10 fill-current"

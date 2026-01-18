@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-	import { Logotype, Modal, Button } from "@atoms";
+	import { Logotype, Modal, Button, Input } from "@atoms";
 	import { Navigation } from "@molecules";
-	import Input from "@atoms/input/input.vue";
 
-	const openCreateProjectModal = () => {
+	// Event comes from DaisyUi
+	const handleOpenCreateProjectModal = () => {
 		(document.getElementById("createProjectModal") as HTMLDialogElement)?.showModal();
 	};
 </script>
@@ -31,7 +31,9 @@
 					<Navigation />
 				</div>
 				<div class="mt-8 border-t border-base-300 pt-4">
-					<Button color="black" @click="openCreateProjectModal"> + New Project </Button>
+					<Button color="black" @click="handleOpenCreateProjectModal">
+						+ New Project
+					</Button>
 				</div>
 			</div>
 		</div>

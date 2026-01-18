@@ -13,7 +13,7 @@
 	];
 
 	// Event comes from DaisyUi
-	const openCreateTaskModal = () => {
+	const handleOpenCreateTaskModal = () => {
 		(document.getElementById("createTaskModal") as HTMLDialogElement)?.showModal();
 	};
 </script>
@@ -48,7 +48,7 @@
 					<li class="mt-3">
 						<button
 							class="btn btn-xs btn-outline btn-primary w-full"
-							@click="openCreateTaskModal"
+							@click="handleOpenCreateTaskModal"
 						>
 							+ New Task
 						</button>
