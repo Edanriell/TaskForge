@@ -1,20 +1,11 @@
-"use client"
-
 <script lang="ts" setup>
-	import { Logotype, Modal } from "@atoms";
+	import { Logotype, Modal, Button } from "@atoms";
+	import { Navigation } from "@molecules";
+	import Input from "@atoms/input/input.vue";
 
-	const projects = [
-		{
-			id: 1,
-			name: "Project One",
-			tasks: ["Task One", "Task Two"]
-		},
-		{
-			id: 2,
-			name: "Project Two",
-			tasks: ["Task One", "Task Two", "Task Three", "Task Four"]
-		}
-	];
+	const openCreateProjectModal = () => {
+		(document.getElementById("createProjectModal") as HTMLDialogElement)?.showModal();
+	};
 </script>
 
 <template>
@@ -26,7 +17,7 @@
 					<label class="btn btn-ghost btn-square" for="app-drawer" aria-label="Open menu">
 						<Icon name="mdi:menu" class="h-6 w-6" />
 					</label>
-					<Logotype classes="flex" />
+					<Logotype classes="flex pointer-events-none select-none" />
 				</div>
 			</div>
 		</div>
@@ -35,89 +26,22 @@
 			<div
 				class="min-h-full w-80 bg-base-200 p-5 flex flex-col justify-between border-r border-base-300"
 			>
-				<Logotype classes="hidden absolute lg:flex" />
+				<Logotype classes="hidden absolute pointer-events-none select-none lg:flex" />
 				<div class="mt-14">
-					<!-- Navigation -->
-					<ul class="menu">
-						<li class="mb-2">
-							<!-- Link -->
-							<NuxtLink
-								class="font-semibold text-base hover:bg-base-300 rounded-lg px-3 py-2"
-								to="/"
-							>
-								Overview
-							</NuxtLink>
-						</li>
-
-						<li class="menu-title mt-6 text-gray-500 uppercase text-xs tracking-wider">
-							Projects
-						</li>
-
-						<!-- Accordion -->
-						<li
-							v-for="project in projects"
-							:key="project.id"
-							class="mt-3 border-l-2 border-transparent hover:border-primary transition-all"
-						>
-							<details class="group" open>
-								<summary
-									class="font-semibold text-base cursor-pointer hover:bg-base-300 rounded-l-none! rounded-r-md! px-3 py-2 flex items-center justify-between"
-								>
-									<span>{{ project.name }}</span>
-								</summary>
-
-								<ul
-									class="relative mt-2 pl-5 space-y-1 before:content-[''] before:absolute before:left-2 before:top-2 before:h-[90%] before:w-[1.5px] before:bg-base-300 hover:before:bg-[#4129d3] before:opacity-[1] transition-all duration-200"
-								>
-									<li
-										v-for="(task, index) in project.tasks"
-										:key="index"
-										class="text-sm"
-									>
-										<a class="block px-4 py-1 rounded-md hover:bg-base-300">
-											{{ task }}
-										</a>
-									</li>
-
-									<!-- Button -->
-									<li class="mt-3">
-										<button
-											class="btn btn-xs btn-outline btn-primary w-full"
-											onclick="createTaskModal.showModal()"
-										>
-											+ New Task
-										</button>
-									</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
+					<Navigation />
 				</div>
-
-				<!-- Bottom Section -->
 				<div class="mt-8 border-t border-base-300 pt-4">
-					<button
-						class="btn btn-sm btn-neutral w-full"
-						onclick="createProjectModal.showModal()"
-					>
-						+ New Project
-					</button>
+					<Button color="black" @click="openCreateProjectModal"> + New Project </Button>
 				</div>
 			</div>
 		</div>
-
 		<Modal id="createTaskModal" title="Create Task">
-			<input class="input input-bordered w-full mb-3" placeholder="Task name" type="text" />
-			<button class="btn btn-primary w-full">Save Task</button>
+			<Input placeholder="Task name" />
+			<Button color="blue">Save Task</Button>
 		</Modal>
-
 		<Modal id="createProjectModal" title="Create Project">
-			<input
-				class="input input-bordered w-full mb-3"
-				placeholder="Project name"
-				type="text"
-			/>
-			<button class="btn btn-primary w-full">Save Project</button>
+			<Input placeholder="Project name" />
+			<Button color="blue">Save Project</Button>
 		</Modal>
 	</aside>
 </template>

@@ -1,9 +1,21 @@
 <script lang="ts" setup>
 	const projects = [
-		{ id: 1, name: "Project Alpha", tasks: 8, completedTasks: 3, status: "Active" },
-		{ id: 2, name: "Project Beta", tasks: 12, completedTasks: 12, status: "Completed" },
-		{ id: 3, name: "Project Gamma", tasks: 5, completedTasks: 0, status: "Paused" }
+		{
+			id: 1,
+			name: "Project One",
+			tasks: ["Task One", "Task Two"]
+		},
+		{
+			id: 2,
+			name: "Project Two",
+			tasks: ["Task One", "Task Two", "Task Three", "Task Four"]
+		}
 	];
+
+	// Event comes from DaisyUi
+	const openCreateTaskModal = () => {
+		(document.getElementById("createTaskModal") as HTMLDialogElement)?.showModal();
+	};
 </script>
 
 <template>
@@ -36,7 +48,7 @@
 					<li class="mt-3">
 						<button
 							class="btn btn-xs btn-outline btn-primary w-full"
-							onclick="createTaskModal.showModal()"
+							@click="openCreateTaskModal"
 						>
 							+ New Task
 						</button>

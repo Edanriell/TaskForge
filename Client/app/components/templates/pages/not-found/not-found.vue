@@ -12,7 +12,6 @@
 <template>
 	<div class="flex min-h-screen items-center justify-center bg-base-200">
 		<div class="text-center">
-			<!-- 404 number with icon overlay -->
 			<div class="relative mb-10">
 				<h1
 					class="text-[10rem] font-black leading-none tracking-tighter text-primary opacity-10 select-none"
@@ -26,14 +25,10 @@
 					/>
 				</div>
 			</div>
-
-			<!-- Content -->
 			<h2 class="mb-4 text-3xl font-bold">Oops! Page not found</h2>
 			<p class="text-base-content/70 mb-10 text-lg">
 				The page you're looking for doesn't exist or has been moved.
 			</p>
-
-			<!-- Action buttons -->
 			<div class="flex justify-center gap-4">
 				<button class="btn btn-primary btn-lg gap-2" @click="handleGoHome">
 					<Icon name="heroicons:home" class="h-5 w-5" />
