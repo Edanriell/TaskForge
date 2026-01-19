@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+	import { Button } from "@atoms";
+
 	const projects = [
 		{
 			id: 1,
@@ -46,12 +48,14 @@
 						</a>
 					</li>
 					<li class="mt-3">
-						<button
-							class="btn btn-xs btn-outline btn-primary w-full"
+						<Button
+							classes="btn-xs w-full"
+							color="blue"
+							outline
 							@click="handleOpenCreateTaskModal"
 						>
 							+ New Task
-						</button>
+						</Button>
 					</li>
 				</ul>
 			</details>

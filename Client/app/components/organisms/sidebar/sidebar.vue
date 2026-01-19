@@ -31,7 +31,7 @@
 					<Navigation />
 				</div>
 				<div class="mt-8 border-t border-base-300 pt-4">
-					<Button color="black" @click="handleOpenCreateProjectModal">
+					<Button classes="w-full" color="black" @click="handleOpenCreateProjectModal">
 						+ New Project
 					</Button>
 				</div>
@@ -39,11 +39,11 @@
 		</div>
 		<Modal id="createTaskModal" title="Create Task">
 			<Input placeholder="Task name" />
-			<Button color="blue">Save Task</Button>
+			<Button color="blue" classes="btn-sm w-full">Save Task</Button>
 		</Modal>
 		<Modal id="createProjectModal" title="Create Project">
 			<Input placeholder="Project name" />
-			<Button color="blue">Save Project</Button>
+			<Button color="blue" classes="w-full">Save Project</Button>
 		</Modal>
 	</aside>
 </template>

@@ -31,4 +31,3 @@
 	<input class="input input-bordered w-full mb-3" :placeholder="placeholder" :type="type" />
 </template>
 
-<style scoped></style>
