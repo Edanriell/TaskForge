@@ -2,10 +2,30 @@
 	import { StatisticCard } from "@molecules";
 	import { ProjectCard } from "@organisms";
 
+	import type { ProjectStatus } from "@organisms";
+
 	const projects = [
-		{ id: 1, name: "Project Alpha", tasks: 8, completedTasks: 3, status: "Active" },
-		{ id: 2, name: "Project Beta", tasks: 12, completedTasks: 12, status: "Completed" },
-		{ id: 3, name: "Project Gamma", tasks: 5, completedTasks: 0, status: "Paused" }
+		{
+			id: 1,
+			name: "Project Alpha",
+			tasks: 8,
+			completedTasks: 3,
+			status: "Active" as ProjectStatus
+		},
+		{
+			id: 2,
+			name: "Project Beta",
+			tasks: 12,
+			completedTasks: 12,
+			status: "Completed" as ProjectStatus
+		},
+		{
+			id: 3,
+			name: "Project Gamma",
+			tasks: 5,
+			completedTasks: 0,
+			status: "Paused" as ProjectStatus
+		}
 	];
 
 	const stats = [

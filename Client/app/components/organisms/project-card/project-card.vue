@@ -1,13 +1,7 @@
 <script lang="ts" setup>
 	import { Badge, ProgressBar } from "@atoms";
 
-	export interface Project {
-		id: number;
-		name: string;
-		tasks: number;
-		completedTasks: number;
-		status: "Active" | "Paused" | "Completed";
-	}
+	import type { Project } from "./project-card.types";
 
 	interface Props {
 		project: Project;
