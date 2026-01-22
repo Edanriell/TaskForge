@@ -42,17 +42,10 @@
 
 	const handleEdit = (id: number) => {
 		console.log("Edit project:", id);
-		// TODO: Open edit modal or navigate to edit page
-	};
-
-	const handleDuplicate = (id: number) => {
-		console.log("Duplicate project:", id);
-		// TODO: Duplicate project logic
 	};
 
 	const handleDelete = (id: number) => {
 		console.log("Delete project:", id);
-		// TODO: Show confirmation modal and delete
 	};
 </script>
 
@@ -89,7 +82,6 @@
 				:key="project.id"
 				:project="project"
 				@edit="handleEdit"
-				@duplicate="handleDuplicate"
 				@delete="handleDelete"
 			/>
 		</div>

@@ -16,7 +16,6 @@
 
 	const emit = defineEmits<{
 		edit: [id: number];
-		duplicate: [id: number];
 		delete: [id: number];
 	}>();
 
@@ -93,16 +92,6 @@
 						<li role="menuitem">
 							<button type="button" class="gap-2" @click="emit('edit', project.id)">
 								<Icon name="heroicons:pencil" class="h-4 w-4" /> Edit
-							</button>
-						</li>
-						<li role="menuitem">
-							<button
-								type="button"
-								class="gap-2"
-								@click="emit('duplicate', project.id)"
-							>
-								<Icon name="heroicons:document-duplicate" class="h-4 w-4" />
-								Duplicate
 							</button>
 						</li>
 						<li role="menuitem">
